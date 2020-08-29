@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // initialization and Binding Views
         init();
 
-       GetPosts();
+       /////GetPosts();
 
        // GetPost();
 
