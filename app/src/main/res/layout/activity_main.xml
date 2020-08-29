@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.MainActivity">
+
+   <RelativeLayout
+       android:id="@+id/topDesign"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:elevation="@dimen/_1sdp"
+       android:background="@color/white">
+
+      <TextView
+          android:id="@+id/usernameTop"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="Foodiez"
+          android:textSize="@dimen/_15ssp"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:fontFamily="monospace"
+          android:layout_centerHorizontal="true"/>
+
+
+      <View
+          android:id="@+id/SplitLine_hor3"
+          android:layout_width="match_parent"
+          android:layout_height= "1dp"
+          android:layout_alignParentBottom="true"
+          android:background="@color/light_transparent" />
+
+
+   </RelativeLayout>
+
+   <android.support.v4.widget.NestedScrollView
+       android:id="@+id/nestedPostScrollView"
+       android:layout_below="@+id/topDesign"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:id="@+id/socialFragment"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fitsSystemWindows="true"
+          tools:context=".SocialFragment">
+
+         <AutoCompleteTextView
+             android:id="@+id/searchSocialAppUsers"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:completionThreshold="1"
+             android:background="@drawable/buttonborder"
+             android:layout_marginStart="@dimen/_10sdp"
+             android:focusable="false"
+             android:layout_marginEnd="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_3sdp"
+             android:paddingTop="@dimen/_7sdp"
+             android:elevation="@dimen/_5sdp"
+             android:dropDownWidth="@dimen/_280sdp"
+             android:dropDownVerticalOffset="@dimen/_6sdp"
+             android:dropDownHorizontalOffset="@dimen/_8sdp"
+             android:paddingBottom="@dimen/_6sdp"
+             android:paddingStart="@dimen/_10sdp"
+             android:textColor="@color/black"
+             android:drawablePadding="@dimen/_8sdp"
+             android:drawableStart="@drawable/search_icon"
+             android:paddingEnd="@dimen/_15sdp"
+             android:inputType="text"
+             android:textSize="@dimen/_11ssp"
+             android:hint="Search Buddiez"
+             android:backgroundTint="@color/white"
+             />
+
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/postsRecyclerView"
+             android:layout_below="@+id/searchSocialAppUsers"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:listitem="@layout/posts_recycler_layout"
+
+             />
+
+
+      </RelativeLayout>
+
+   </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

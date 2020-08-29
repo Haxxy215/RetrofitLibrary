@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textColor="@color/ButtonColors"
+        android:textSize="@dimen/_21ssp"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/_12sdp"
+        android:text="Log in to your account"/>
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/buttonborder"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:elevation="@dimen/_1sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:backgroundTint="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEmail"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/buttonborder"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:elevation="@dimen/_1sdp"
+        android:paddingEnd="@dimen/_55sdp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:backgroundTint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/forotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEmail"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="Forgot"
+        android:elevation="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/ButtonColors"/>
+
+
+    <Button
+        android:id="@+id/loginAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPassword"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:background="@drawable/buttonborder"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="0dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/ButtonColors"
+        />
+
+
+    <TextView
+        android:id="@+id/alreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_90sdp"
+        android:textAlignment="center"
+        android:text="Don't Have an Account"
+        android:textSize="@dimen/_11ssp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+
+    <TextView
+        android:id="@+id/signupBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/alreadyAccount"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:textAlignment="center"
+        android:text="Signup"
+        android:textColor="@color/ButtonColors"
+        android:textSize="@dimen/_11ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+
+
+</RelativeLayout>
